@@ -43,7 +43,7 @@ apps_resume_src_bootstrap_ts.js                                                 
                                                                                                         | -             |   0 bytes | 
                                                                                                         | -             |   0 bytes | 
 
-Build at: 2024-07-30T03:14:26.482Z - Hash: f16a3874d7ef67e6 - Time: 2918ms
+Build at: 2024-07-30T04:02:54.092Z - Hash: f16a3874d7ef67e6 - Time: 3014ms
 
 Warning: /Users/ngoctrong/Documents/ntrong2009/personal-website/apps/resume/src/app/remote-entry/entry.component.ts is part of the TypeScript compilation but it's unused.
 Add only entry points to the 'files' or 'include' properties in your tsconfig.
@@ -56,4 +56,5 @@ Add only entry points to the 'files' or 'include' properties in your tsconfig.
 
 
  NX   Successfully ran target build for project resume
+
 

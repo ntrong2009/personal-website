@@ -1,0 +1,92 @@
+
+ NX   Running target build for 2 projects:
+
+- resume
+- about
+
+
+
+> nx run resume:build:development  [local cache]
+
+- Generating browser application bundles (phase: setup)...
+    TypeScript compiler options "target" and "useDefineForClassFields" are set to "ES2022" and "false" respectively by the Angular CLI. To control ECMA version and features use the Browserslist configuration. For more information, see https://angular.dev/tools/cli/build#configuring-browser-compatibility
+    NOTE: You can set the "target" to "ES2022" in the project's tsconfig to remove this warning.
+[ Module Federation Manifest Plugin ]: Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
+✔ Browser application bundle generation complete.
+✔ Browser application bundle generation complete.
+- Copying assets...
+✔ Copying assets complete.
+- Generating index html...
+✔ Index html generation complete.
+
+Initial chunk files                                                                                     | Names         |  Raw size
+polyfills.js                                                                                            | polyfills     | 304.58 kB | 
+remoteEntry.mjs                                                                                         | resume        | 190.86 kB | 
+vendor.js                                                                                               | vendor        | 161.23 kB | 
+main.js                                                                                                 | main          |  30.46 kB | 
+styles.css                                                                                              | styles        |   1.67 kB | 
+
+                                                                                                        | Initial total | 688.81 kB
+
+Lazy chunk files                                                                                        | Names         |  Raw size
+node_modules_angular_core_fesm2022_core_mjs.js                                                          | -             |   1.56 MB | 
+default-node_modules_angular_router_fesm2022_router_mjs.js                                              | -             | 361.04 kB | 
+default-node_modules_angular_common_fesm2022_common_mjs.js                                              | -             | 318.39 kB | 
+default-node_modules_angular_common_fesm2022_http_mjs.js                                                | -             | 130.57 kB | 
+default-node_modules_angular_platform-browser_fesm2022_platform-browser_mjs.js                          | bootstrap     |  93.74 kB | 
+node_modules_angular_core_fesm2022_primitives_event-dispatch_mjs.js                                     | -             |  74.87 kB | 
+default-node_modules_rxjs_dist_esm_internal_observable_of_js-node_modules_rxjs_dist_esm_inter-3042cc.js | -             |  63.53 kB | 
+default-node_modules_rxjs_dist_esm_internal_Observable_js-node_modules_rxjs_dist_esm_internal-11fb61.js | -             |  32.16 kB | 
+node_modules_angular_core_fesm2022_primitives_signals_mjs.js                                            | -             |  21.85 kB | 
+common.js                                                                                               | common        |   6.73 kB | 
+apps_resume_src_bootstrap_ts.js                                                                         | bootstrap     | 889 bytes | 
+                                                                                                        | -             |   0 bytes | 
+                                                                                                        | -             |   0 bytes | 
+                                                                                                        | -             |   0 bytes | 
+
+Build at: 2024-07-30T09:19:23.389Z - Hash: f16a3874d7ef67e6 - Time: 6014ms
+
+Warning: /Users/ngoctrong/Documents/ntrong2009/personal-website/apps/resume/src/app/remote-entry/entry.component.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+Warning: /Users/ngoctrong/Documents/ntrong2009/personal-website/apps/resume/src/app/remote-entry/entry.routes.ts is part of the TypeScript compilation but it's unused.
+Add only entry points to the 'files' or 'include' properties in your tsconfig.
+
+
+
+> nx run about:build:development  [local cache]
+
+[ Module Federation Manifest Plugin ]: Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'
+Unable to compile federated types, Error: compile TS failed, the original command is 'npx tsc --project /Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/node_modules/.federation/tsconfig.b2e3951d-ec1c-4758-b1b3-4abd28efbfc7.json'
+Error: ENOENT: no such file or directory, open '/Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/dist/@mf-types.zip'
+    at Object.openSync (node:fs:596:3)
+    at Object.readFileSync (node:fs:464:35)
+    at _GenerateTypesPlugin.<anonymous> (/Users/ngoctrong/Documents/ntrong2009/personal-website/node_modules/@module-federation/dts-plugin/dist/index.js:2470:140)
+    at Generator.next (<anonymous>)
+    at fulfilled (/Users/ngoctrong/Documents/ntrong2009/personal-website/node_modules/@module-federation/dts-plugin/dist/index.js:54:24)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  errno: -2,
+  syscall: 'open',
+  code: 'ENOENT',
+  path: '/Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/dist/@mf-types.zip'
+}
+Entrypoint main 69.4 KiB (273 KiB) = main.js 1 auxiliary asset
+Entrypoint styles 68.9 KiB (271 KiB) = styles.css 1 bytes styles.js 68.9 KiB 1 auxiliary asset
+Entrypoint about 69.7 KiB (274 KiB) = remoteEntry.js 1 auxiliary asset
+chunk (runtime: main) 185.js 934 bytes (javascript) 42 bytes (consume-shared) [rendered]
+chunk (runtime: about, main, styles) 485.js (id hint: vendors) 134 KiB [rendered] reused as split chunk (cache group: defaultVendors)
+chunk (runtime: about, main, styles) 552.js 6.95 KiB [rendered]
+chunk (runtime: about) remoteEntry.js (about) 165 KiB (javascript) 84 bytes (share-init) 10.6 KiB (runtime) [entry] [rendered]
+chunk (runtime: about, main, styles) 42 bytes reused as split chunk (cache group: default)
+chunk (runtime: main) main.js (main) 165 KiB (javascript) 84 bytes (share-init) 10.9 KiB (runtime) [entry] [rendered]
+chunk (runtime: styles) styles.css, styles.js (styles) 165 KiB (javascript) 0 bytes (css/mini-extract) 84 bytes (share-init) 10.3 KiB (runtime) [entry] [rendered]
+chunk (runtime: about) __federation_expose_Module.js (__federation_expose_Module) 36 bytes [rendered]
+chunk (runtime: about, main) 978.js 35.4 KiB [rendered] split chunk (cache group: default)
+webpack compiled successfully (1cb69fb7a92caf0a)
+
+
+
+ NX   Successfully ran target build for 2 projects
+
+Nx read the output from the cache instead of running the command for 2 out of 2 tasks.
+

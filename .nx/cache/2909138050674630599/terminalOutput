@@ -1,0 +1,27 @@
+[1m[34m[ Module Federation Manifest Plugin ]: Manifest will use absolute path resolution via its host at runtime, reason: publicPath='auto'[39m[22m
+[31mUnable to compile federated types, Error: compile TS failed, the original command is 'npx tsc --project /Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/node_modules/.federation/tsconfig.b2e3951d-ec1c-4758-b1b3-4abd28efbfc7.json'[39m
+Error: ENOENT: no such file or directory, open '/Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/dist/@mf-types.zip'
+[90m    at Object.openSync (node:fs:596:3)[39m
+[90m    at Object.readFileSync (node:fs:464:35)[39m
+    at _GenerateTypesPlugin.<anonymous> [90m(/Users/ngoctrong/Documents/ntrong2009/personal-website/[39mnode_modules/[4m@module-federation[24m/dts-plugin/dist/index.js:2470:140[90m)[39m
+    at Generator.next (<anonymous>)
+    at fulfilled [90m(/Users/ngoctrong/Documents/ntrong2009/personal-website/[39mnode_modules/[4m@module-federation[24m/dts-plugin/dist/index.js:54:24[90m)[39m
+[90m    at processTicksAndRejections (node:internal/process/task_queues:95:5)[39m {
+  errno: [33m-2[39m,
+  syscall: [32m'open'[39m,
+  code: [32m'ENOENT'[39m,
+  path: [32m'/Users/ngoctrong/Documents/ntrong2009/personal-website/apps/about/dist/@mf-types.zip'[39m
+}
+Entrypoint [1mmain[39m[22m 69.4 KiB (273 KiB) = [1m[32mmain.js[39m[22m 1 auxiliary asset
+Entrypoint [1mstyles[39m[22m 68.9 KiB (271 KiB) = [1m[32mstyles.css[39m[22m 1 bytes [1m[32mstyles.js[39m[22m 68.9 KiB 1 auxiliary asset
+Entrypoint [1mabout[39m[22m 69.7 KiB (274 KiB) = [1m[32mremoteEntry.js[39m[22m 1 auxiliary asset
+chunk (runtime: main) [1m[32m185.js[39m[22m 934 bytes (javascript) 42 bytes (consume-shared) [1m[32m[rendered][39m[22m
+chunk (runtime: about, main, styles) [1m[32m485.js[39m[22m (id hint: vendors) 134 KiB [1m[32m[rendered][39m[22m [1m[33mreused as split chunk (cache group: defaultVendors)[39m[22m
+chunk (runtime: about, main, styles) [1m[32m552.js[39m[22m 6.95 KiB [1m[32m[rendered][39m[22m
+chunk (runtime: about) [1m[32mremoteEntry.js[39m[22m (about) 165 KiB (javascript) 84 bytes (share-init) 10.6 KiB (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: about, main, styles) 42 bytes [1m[33mreused as split chunk (cache group: default)[39m[22m
+chunk (runtime: main) [1m[32mmain.js[39m[22m (main) 165 KiB (javascript) 84 bytes (share-init) 10.9 KiB (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: styles) [1m[32mstyles.css[39m[22m, [1m[32mstyles.js[39m[22m (styles) 165 KiB (javascript) 0 bytes (css/mini-extract) 84 bytes (share-init) 10.3 KiB (runtime) [1m[33m[entry][39m[22m [1m[32m[rendered][39m[22m
+chunk (runtime: about) [1m[32m__federation_expose_Module.js[39m[22m (__federation_expose_Module) 36 bytes [1m[32m[rendered][39m[22m
+chunk (runtime: about, main) [1m[32m978.js[39m[22m 35.4 KiB [1m[32m[rendered][39m[22m [1m[33msplit chunk (cache group: default)[39m[22m
+webpack compiled [1m[32msuccessfully[39m[22m (1cb69fb7a92caf0a)

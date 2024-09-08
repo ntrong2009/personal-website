@@ -1,0 +1,21 @@
+{
+  "run": {
+    "command": "nx run-many --target=build --projects=resume --configuration=development",
+    "startTime": "2024-07-30T04:02:49.514Z",
+    "endTime": "2024-07-30T04:02:54.120Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "resume:build:development",
+      "target": "build",
+      "projectName": "resume",
+      "hash": "13149122826314098003",
+      "startTime": "2024-07-30T04:02:49.519Z",
+      "endTime": "2024-07-30T04:02:54.119Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}
